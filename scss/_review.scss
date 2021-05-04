@@ -1,0 +1,52 @@
+.review {
+    .box-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .box {
+            background: $White;
+            margin: 1rem;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            border: .1rem solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+            flex: 1 1 30rem;
+            .fa-quote-right {
+                position: absolute;
+                top: 1rem;
+                left: 2rem;
+                font-size: 8rem;
+                color: $Pink;
+                opacity: .3;
+            }
+            .user {
+                img {
+                    animation: bounce;
+                    /* referring directly to the animation's @keyframe declaration */
+                    animation-duration: 5s;
+                    /* don't forget to set a duration! */
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 7rem;
+                    height: 7rem;
+                }
+                h3 {
+                    color: $Pink;
+                    font-size: 2rem;
+                }
+                .stars i {
+                    color: $Purple;
+                    font-size: 1.5rem;
+                    padding: 1rem 0;
+                }
+                .comment {
+                    color: $light-gray;
+                    font-size: 1.4rem;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}

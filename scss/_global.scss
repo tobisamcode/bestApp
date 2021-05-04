@@ -1,0 +1,71 @@
+@import 'variables';
+@import 'minix';
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+*::selection {
+    background: $Pink;
+    color: $White;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: none;
+    @include respond(full-screen) {
+        font-size: 55%;
+    }
+    @include respond(mobile) {
+        font-size: 50%;
+    }
+}
+
+body {
+    background: $DarkWhite;
+}
+
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5rem;
+    @include respond(tablet) {
+        padding: 0 3%;
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: $Gradient;
+    font-size: 1.7rem;
+    color: $White;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
+    transition: all .3s linear;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.headings {
+    text-align: center;
+    background: $Gradient;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+}

@@ -1,0 +1,48 @@
+.about {
+    background: url(/dist/img/about-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    .column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .image {
+            flex: 1 1 40rem;
+            img {
+                width: 100%;
+            }
+        }
+        .content {
+            flex: 1 1 40rem;
+            h3 {
+                font-size: 3rem;
+                color: $light-gray;
+            }
+            p {
+                font-size: 1.5rem;
+                color: $light-gray;
+                padding: 1rem 0;
+            }
+            .buttons a:last-child {
+                margin-left: 2rem;
+                @include respond (mobile) {
+                    margin: 1rem 0;
+                }
+            }
+            .buttons a {
+                i {
+                    margin-right: 1rem;
+                }
+                @include respond (mobile) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @include respond(tablet) {
+        background-position: right;
+    }
+}

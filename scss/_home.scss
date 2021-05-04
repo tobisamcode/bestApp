@@ -1,0 +1,42 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/dist/img/home-bg-img.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    &__image {
+        img {
+            width: 40vw;
+            animation: float 3s linear infinite;
+            @include respond(tablet) {
+                width: 100%;
+            }
+        }
+    }
+    &__content {
+        h3 {
+            font-size: 5.5rem;
+            color: $gray;
+            text-transform: uppercase;
+            span {
+                color: $Pink;
+                text-transform: uppercase;
+            }
+            @include respond(tablet) {
+                font-size: 3.6rem;
+            }
+        }
+        p {
+            font-size: 1.7rem;
+            color: $light-gray;
+            padding: 1rem 0;
+            @include respond(tablet) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    @include respond(tablet) {
+        flex-flow: column-reverse;
+    }
+}

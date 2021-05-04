@@ -1,0 +1,50 @@
+.newsletter {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: url(/dist/img/subscribe-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    h3 {
+        color: $White;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    p {
+        color: $White;
+        font-size: 1.6rem;
+        margin: 2rem auto;
+        width: 70rem auto;
+    }
+    form {
+        display: flex;
+        max-width: 70rem;
+        border: .2rem solid $White;
+        padding: .5rem;
+        border-radius: 5rem;
+        margin: 2rem auto;
+        height: 5rem;
+        input[type="email"] {
+            padding: 0 2rem;
+            font-size: 1.7rem;
+            background: none;
+            width: 100%;
+            color: $White;
+            text-transform: none;
+            background: none;
+            &::placeholder {
+                color: #eee;
+                text-transform: capitalize;
+            }
+        }
+        input[type="submit"] {
+            background: $White;
+            width: 20rem;
+            font-size: 1.7rem;
+            border-radius: 5rem;
+            cursor: pointer;
+            &:hover {
+                color: $Pink;
+            }
+        }
+    }
+}

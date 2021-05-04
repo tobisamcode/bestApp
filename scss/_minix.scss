@@ -1,0 +1,17 @@
+@mixin respond($breakpoint) {
+    @if($breakpoint==full-screen) {
+        @media (max-width: 1200px) {
+            @content
+        }
+    }
+    @if($breakpoint==tablet) {
+        @media (max-width: 768px) {
+            @content
+        }
+    }
+    @if($breakpoint==mobile) {
+        @media (max-width: 450px) {
+            @content
+        }
+    }
+}

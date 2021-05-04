@@ -1,0 +1,60 @@
+.footer {
+    padding-top: 3rem;
+    background: url(/dist/img/footer-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        .box {
+            flex: 1 1 25rem;
+            margin: 2rem;
+            h3 {
+                font-size: 2.5rem;
+                padding: 1rem 0;
+                color: $White;
+                text-decoration: underline;
+                text-underline-offset: 1rem;
+            }
+            p {
+                font-size: 1.5rem;
+                padding: .5rem 0;
+                color: $DarkWhite;
+            }
+            a {
+                display: block;
+                font-size: 1.5rem;
+                padding: .5rem 0;
+                color: $DarkWhite;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .info {
+                display: flex;
+                align-items: center;
+                i {
+                    margin: .5rem 0;
+                    margin-right: 1rem;
+                    border-radius: 50%;
+                    background: $White;
+                    color: $Pink;
+                    font-size: 1.5rem;
+                    height: 4.5rem;
+                    width: 4.5rem;
+                    line-height: 4.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .credit {
+        font-size: 2rem;
+        font-weight: normal;
+        letter-spacing: .1rem;
+        color: $White;
+        border-top: .1rem solid #fff5;
+        padding: 2.5rem 1rem;
+        text-align: center;
+    }
+}

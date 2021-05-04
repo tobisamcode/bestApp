@@ -1,0 +1,62 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+    .image {
+        flex: 1 1 40rem;
+        img {
+            width: 100%;
+            padding: 2rem;
+        }
+    }
+    form {
+        flex: 1 1 40rem;
+        padding: 2rem 3rem;
+        border: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        border-radius: .5rem;
+        background: $White;
+        .headings {
+            text-align: left;
+            padding: 0;
+            padding-bottom: 2rem;
+        }
+        .inputBox {
+            position: relative;
+            input,
+            textarea {
+                width: 100%;
+                background: none;
+                color: $light-gray;
+                margin: 1.5rem 0;
+                padding: .5rem 0;
+                font-size: 1.7rem;
+                border-bottom: .1rem solid rgba(0, 0, 0, .1);
+                text-transform: none;
+            }
+            textarea {
+                resize: none;
+                height: 13rem;
+            }
+            label {
+                position: absolute;
+                top: 1.7rem;
+                left: 0;
+                font-size: 1.7rem;
+                color: $light-gray;
+                transition: .2s linear;
+            }
+            input,
+            textarea {
+                &:focus~label,
+                &:valid~label {
+                    top: -.5rem;
+                    font-size: 1.5rem;
+                    color: $Pink;
+                }
+            }
+        }
+    }
+}
