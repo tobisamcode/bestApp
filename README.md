@@ -19,7 +19,7 @@ A landing page describing the bestApp application.
 ```javascript
 <script src="https://unpkg.com/scrollreveal"></script>
 ```
-######## app.js
+######## js
 ```javascript
 const sr = ScrollReveal({
     distance: '30px',
@@ -97,3 +97,6 @@ sr.reveal(`.third, .form`, {
     }
 }
 ```
+
+####### layout code
+![picture](https://github.com/tobisamcode/bestApp/blob/main/saaassmobile.jpg)
